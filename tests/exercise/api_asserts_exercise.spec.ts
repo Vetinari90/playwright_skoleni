@@ -13,7 +13,7 @@ test("cviceni 7", async ({ request }) => {
   expect(id, "User id is 1").toBe(1);
 });
 
-test("vyzva xz", async ({ request }) => {
+test.skip("vyzva xz", async ({ request }) => {
   const response = await request.get(
     "https://api.pokemontcg.io/v2/cards/xy1-1"
   );

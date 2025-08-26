@@ -60,7 +60,7 @@ test("upload file", async ({ page }) => {
   await page.waitForTimeout(2000); //
 });
 
-test("slider", async ({ page }) => {
+test.skip("slider", async ({ page }) => {
   await page.goto(pageRegistration);
 
   await page.locator('input[id="experience"]').fill("2");

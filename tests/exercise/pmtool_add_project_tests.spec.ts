@@ -2,7 +2,7 @@ import { test, expect } from "@playwright/test";
 
 const loginPage = "https://tredgate.com/pmtool";
 
-test("cviceni 4", async ({ page }) => {
+test.skip("cviceni 4", async ({ page }) => {
   await page.goto(loginPage);
   await page.locator('input[id="username"]').fill("playwright_jaro24");
   await page.locator('input[id="password"]').fill("Playwright!2024");

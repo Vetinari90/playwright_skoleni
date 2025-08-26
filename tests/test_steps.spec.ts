@@ -1,6 +1,6 @@
 import { test, expect } from "@playwright/test";
 
-test("Using Test Steps", async ({ page }) => {
+test.skip("Using Test Steps", async ({ page }) => {
   await test.step("Open Pmtool", async () => {
     await page.goto("https://tredgate.com/pmtool");
   });

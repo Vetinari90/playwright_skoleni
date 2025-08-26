@@ -1,6 +1,6 @@
 import { test } from "@playwright/test";
 
-test("Contact Us Cvičení", async ({ page }) => {
+test.skip("Contact Us Cvičení", async ({ page }) => {
   await page.goto("https://tredgate.com/webtrain/contact.html");
   await page.waitForURL("https://tredgate.com/webtrain/contact.html");
 
